@@ -5,24 +5,15 @@
 using namespace std;
 int main() {
     int so;
-    int nam;
 
     cout << "Nhap thang de ban biet so ngay trong thang: "; cin >> so;
-    cout << "Nhap nam ban muon biet ngay thang cua nam do : "; cin >> nam;
 
     switch (so) {
     case 1:
         cout << "Thang 1 co 31 ngay\n";
         break;
     case 2:
-        if (nam % 4 == 0 && nam % 100 != 0 || nam % 400 == 0) 
-        {
-            cout << "Nam nay la nam nhuan co 29 ngay theo lich duong\n";
-        }
-        else 
-        {
-            cout << "Nam nay khong nhuan co 28 ngay theo lich duong\n";
-        }
+        cout << "Thang 2 co 28/29 ngay\n";
         break;
     case 3:
         cout << "Thang 3 co 31 ngay\n";
